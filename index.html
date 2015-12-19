@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Test</title>
+        <title>File Parser</title>
+        <!--    Load the script to read the file and parse the text -->
         <script src="scripts/read.js" type="text/javascript"></script>
     </head>
     <body>
-        Select file to upload:&nbsp;&nbsp;
+        <!--    File chooser input field    -->
+        Select file to parse:&nbsp;&nbsp;
         <input type="file" name="fileToUpload" id="inputfile">
         <br>
         <br>
+        <!--    parse string input field    -->
         String to parse:&nbsp;&nbsp;<input type="text" name="parseString" id="parseString">
-        <input type="button" name="submit" id="submit" value="Submit" onclick="getText()">
+        <!--    submit button can only be used if the user chooses a file AND picks a string to parse for   -->
+        <input type="button" name="submit" id="submit" value="Submit" onclick="parseFile()">
+        <!--    empty container to output to    -->
         <p id="testP"></p>
     </body>
 </html>
